@@ -1,6 +1,10 @@
-numero = str(input('Digite um número de 0 a 9999: '))
+numero = int(input('Digite um número de 0 a 9999: '))
+u = numero // 1 % 10
+d = numero // 10 % 10
+c = numero // 100 % 10
+m = numero // 1000 % 10
 print(f'Esse número possui:\n'
-      f'unidade: {numero[3]}\n'
-      f'dezena: {numero[2]}\n'
-      f'centena: {numero[1]}\n'
-      f'milhar: {numero[0]}')
+      f'unidade: {u}\n'
+      f'dezena: {d}\n'
+      f'centena: {c}\n'
+      f'milhar: {m}')
