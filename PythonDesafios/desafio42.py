@@ -5,11 +5,12 @@ reta2 = float(input('Digite o valor da segunda reta: '))
 reta3 = float(input('Digite o valor da terceira reta: '))
 #condição triângulo
 if reta1 + reta2 > reta3 and reta1 + reta3 > reta2 and reta2 + reta3 > reta1:
+    print('Esses 3 segmentos podem formar um triângulo ', end='')
     if reta1 == reta2 and reta1 == reta3:
-        print('Esses 3 segmentos podem formar um triângulo EQUILÁTERO.')
+         print('EQUILÁTERO.')
     elif reta1 == reta2 or reta1 == reta3 or reta2 == reta3:
-        print('Esses 3 segmentos podem formar um triângulo ISÓSCELES.')
+        print('ISÓSCELES.')
     else:
-        print('Esses 3 segmentos podem formar um triângulo ESCALENO.')
+        print('ESCALENO.')
 else:
     print('Essas 3 retas não podem formar um triângulo.')
