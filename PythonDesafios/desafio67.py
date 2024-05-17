@@ -1,4 +1,3 @@
-
 while True:
     num = int(input('Quer ver a tabuada de qual valor? '))
     print('-' * 20)

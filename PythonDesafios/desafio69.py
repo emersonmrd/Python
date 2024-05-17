@@ -1,14 +1,11 @@
-pessoas = 0
-homens = 0
-maior18 = 0
-mulheres_abaixo_vinte = 0
+pessoas = homens = maior18 = mulheres_abaixo_vinte = 0
 while True:
     print('-' * 30)
     titulo = 'CADASTRE UMA PESSOA'
     print(f'|{titulo:^28}|')
     print('-' * 30)
     idade = int(input('Idade: '))
-    if idade > 18:
+    if idade >= 18:
         maior18 += 1
     sexo = str(input('Sexo [M/F] ')).strip().upper()[0]
     while sexo not in 'MF':

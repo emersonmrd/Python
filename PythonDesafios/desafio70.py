@@ -1,9 +1,7 @@
 print('-' * 30)
 print(f'|{'LOJAS SUPER BARATÃO':^28}|')
 print('-' * 30)
-total_gasto = 0
-maior_mil = 0
-mais_barato = 0
+total_gasto = maior_mil = mais_barato = 0
 nome_mais_barato = ''
 while True:
     nome_produto = str(input('Nome do Produto: '))

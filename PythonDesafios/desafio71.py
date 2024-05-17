@@ -1,7 +1,35 @@
 print('=' * 30)
 print(f'{'BANCO PLEBES':^30}')
 print('=' * 30)
-numero = int(input('Qual valor você quer sacar? R$'))
+
+valor = int(input('Que valor você quer sacar? R$'))
+total = valor
+ced = 50
+totced = 0
+while True:
+    if total >= ced:
+        total -= ced
+        totced += 1
+    else:
+        if totced > 0:
+            print(f'Total de {totced} cédulas de R${ced}')
+        if ced == 50:
+            ced = 20
+        elif ced == 20:
+            ced = 10
+        elif ced == 10:
+            ced = 1
+        totced = 0
+        if total == 0:
+            break
+print('=' * 30)
+print('Volte sempre ao BANCO PLEBES! Tenha um bom dia!')
+
+
+
+
+
+"""numero = int(input('Qual valor você quer sacar? R$'))
 resto50 = numero // 50
 valor50 = resto50 * 50
 restante50 = numero - valor50
@@ -21,4 +49,4 @@ if resto10 != 0:
 if resto1 != 0:
     print(f'Total de {resto1} cédulas de R$1')
 print('=' * 30)
-print('Volte sempre ao BANCO PLEBES! Tenha um bom dia!')
+print('Volte sempre ao BANCO PLEBES! Tenha um bom dia!')"""

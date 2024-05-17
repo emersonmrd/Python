@@ -13,7 +13,7 @@ while True:
         escolha = str(input('Par ou ímpar? [P/I] ')).strip().upper()[0]
         print('-' * 30)
 
-    comp = randint(0,11)
+    comp = randint(0,10)
     soma = comp + num
     resultado = 'PAR' if soma % 2 == 0 else 'ÍMPAR'
 
