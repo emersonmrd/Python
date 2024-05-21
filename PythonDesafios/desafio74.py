@@ -1,7 +1,7 @@
 from random import randint
 numeros = tuple(randint(0, 10) for _ in range(5))
-print(numeros)
 
+"""
 maior = 0
 menor = 0
 for c in range(0, len(numeros)):
@@ -14,6 +14,9 @@ for c in range(0, len(numeros)):
         if menor > numeros[c]:
             menor = numeros[c]
     c += 1
-print(f'Os valores sorteados foram: {numeros[0]} {numeros[1]} {numeros[2]} {numeros[3]} {numeros[4]}')
-print(f'O maior valor sorteado foi {maior}')
-print(f'O menor valor sorteado foi {menor}')
+"""
+print(f'Os valores sorteados foram: ', end='')
+for n in numeros:
+    print(f'{n}', end=' ')
+print(f'\nO maior valor sorteado foi {max(numeros)}')
+print(f'O menor valor sorteado foi {min(numeros)}')
