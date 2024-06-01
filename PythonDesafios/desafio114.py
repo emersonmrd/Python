@@ -1,4 +1,4 @@
-import socket
+'''import socket
 
 def verificar_host(host, port=443):
     try:
@@ -8,4 +8,15 @@ def verificar_host(host, port=443):
         print(f'O site Pudim não está acessível no momento.')
 
 # Testando a função
-verificar_host('www.pudim.com.br')
+verificar_host('www.pudim.com.br')'''
+
+import urllib
+import urllib.request
+
+try:
+    site = urllib.request.urlopen('http://www.pudim.com.br')
+except urllib.error.URLError:
+    print('O site Pudim não está acessível no momento.')
+else:
+    print('Consegui acessar o site Pudim com sucesso!')
+    #print(site.read())
